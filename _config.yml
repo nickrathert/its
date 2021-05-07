@@ -29,6 +29,9 @@ url: "http://individualtaxservice.com" # the base hostname & protocol for your s
 
 # Build settings
 #theme: minima
+timezone: America/Chicago
+encoding: utf-8
+#ignore_theme_config: TRUE
 plugins:
   - jekyll-feed
 
