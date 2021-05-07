@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Individual Taxserivce | A Family Owned and Operated Accounting and Tax Service | Oak Lawn, IL
+title: " | Individual Taxserivce | A Family Owned and Operated Accounting and Tax Service | Oak Lawn, IL"
+aloneTitle: Individual Taxserivce | A Family Owned and Operated Accounting and Tax Service | Oak Lawn, IL
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   INDIVIDUAL TAXSERVICE has been serving the Chicagoland community for over 20 years. Specializing in servicing the tax needs of every individual, we offer both personal and corporate tax return filing as well as year round business accounting services.
