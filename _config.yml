@@ -55,3 +55,20 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+keep_files:
+   - css
+   - js
+
+# Site Global Variables
+mfOpen: "9 am"
+mfClose: "8 pm"
+saOpen: "8:30 am"
+saClose: "4:30 pm"
+offseasonStartMonth: June
+offseasonEndMonth: December
+itsPhone: "(708) 952-9219"
+itsEmail: "&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#97;&#110;&#107;&#46;&#103;&#111;&#114;&#121;&#64;&#105;&#110;&#100;&#105;&#118;&#105;&#100;&#117;&#97;&#108;&#116;&#97;&#120;&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#46;&#99;&#111;&#109;"
+itsStreet: "4823 W 103rd St"
+itsCity: "Oak Lawn"
+itsState: IL
+itsZip: "60453"

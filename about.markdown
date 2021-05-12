@@ -1,6 +1,7 @@
 ---
 layout: default
-title: About
+title: About Us
+class: about
 permalink: /about/
 ---
 

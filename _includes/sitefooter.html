@@ -1,3 +1,10 @@
 <footer class="site-footer">
-
+    <div class="wrapper">
+        <p>&copy; 2021 Individual Taxservice</p>
+        <p>Phone: {{ site.itsPhone }}<br>
+            Email: <a href="{{ site.itsEmail | escape_once }}">Hank Gory</a>
+        </p>
+        <p>{{ site.itsStreet }}<br>
+        {{ site.itsCity }}, {{ site.itsState }} {{ site.itsZip }}</p>
+    </div>
 </footer>
