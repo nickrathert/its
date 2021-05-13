@@ -58,6 +58,7 @@ exclude:
 keep_files:
    - css
    - js
+   - img
 
 # Site Global Variables
 mfOpen: "9 am"

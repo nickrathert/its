@@ -36,7 +36,7 @@
         {% if page.title == "Home" %}
         <div class="home-cta">
             <h1>Get Your Refund!</h1>
-            <button>Schedule an Appointment</button>
+            {% include btn-appointment.html %}
         </div>
         {% else %}
         <h1>{{ page.title }}</h1>
