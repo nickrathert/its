@@ -1,0 +1,20 @@
+{% if include.img-path %}
+    {% assign img-path = include.img-path %}
+{% endif %}
+
+{% if include.alt-txt %}
+    {% assign alt-txt = include.alt-txt %}
+{% endif %}
+
+{% if include.name %}
+    {% assign name = include.name %}
+{% endif %}
+
+{% if include.title %}
+    {% assign title = include.title %}
+{% endif %}
+
+
+    <img src="{{ img-path }}" alt="{{ alt-txt }}">
+    <h3>{{ name }}</h3>
+    <em>{{ title }}</em>
