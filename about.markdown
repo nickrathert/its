@@ -17,17 +17,18 @@ team_members:
     order: 100
 ---
 
-<h2>Our Business is based on Family Values, Communication and Dedication</h2>
+<div class="wrapper">
+    <h2>Our Business is based on Family Values, Communication and Dedication</h2>
 
-<p><em>Individual Taxservice</em> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi quis cursus mauris non neque facilisis mollis. Neque, gravida sit sodales praesent in. Turpis dolor est viverra nunc eget fames. Penatibus sed ullamcorper quam consequat leo scelerisque. Curabitur id tellus mollis odio enim lorem pulvinar cursus. Eu, ultrices varius ac id amet aliquet.</p>
+    <p><em>Individual Taxservice</em> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi quis cursus mauris non neque facilisis mollis. Neque, gravida sit sodales praesent in. Turpis dolor est viverra nunc eget fames. Penatibus sed ullamcorper quam consequat leo scelerisque. Curabitur id tellus mollis odio enim lorem pulvinar cursus. Eu, ultrices varius ac id amet aliquet.</p>
 
-<h2>Our Team</h2>
-<ul class="team">
-    {% assign members = page.team_members | sort: 'order' %}
-    {% for member in members %}
-    <li class="team-member">
-        {% include team-member.html name=member.name title=member.title img-path=member.imgPath alt-txt=member.altTxt %}
-    </li>
-    {% endfor %}
-</ul>
-
+    <h2>Our Team</h2>
+    <ul class="team">
+        {% assign members = page.team_members | sort: 'order' %}
+        {% for member in members %}
+        <li class="team-member">
+            {% include team-member.html name=member.name title=member.title img-path=member.imgPath alt-txt=member.altTxt %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

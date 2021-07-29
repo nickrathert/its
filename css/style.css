@@ -13,14 +13,39 @@
 
 body {
     font-family: var(--copy-font);
+    font-size: 14px;
     color: var(--copy-color);
 }
 
 h1, h2 {
     font-family: var(--heading-font);
     font-weight: normal;
+    text-align: center;
 }
 
 h3, h4, h5 {
+    font-size: 18px;
     font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--color-4);
+}
+
+table {
+    width: 100%;
+}
+
+.price-table thead {
+    display: none;
+}
+
+.wrapper {
+    margin: 26px;
 }
