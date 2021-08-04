@@ -6,6 +6,9 @@
         </p>
         <p>{{ site.itsStreet }}<br>
         {{ site.itsCity }}, {{ site.itsState }} {{ site.itsZip }}</p>
+        {% if page.class != "home" %}
+        <img class="cc-logos" src="/img/cc-logos.png" alt="Credit Card logos for Square, Visa, MasterCard, Amex, and Discover" />
+        {% endif %}
     </div>
 </footer>
 
