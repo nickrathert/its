@@ -73,3 +73,35 @@ table {
     right: 0%;
     top: 17%;
 }
+
+#site-nav {
+    position: absolute;
+    padding: 1em;
+    right: -6%;
+    padding-right: 6.5%;
+    transform-origin: 0 0;
+    transform: translate(100%);
+    transition: transform .25s ease;
+}
+
+#smallscreen-menu-checkbox {
+    border: 0;
+    -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+    clip-path: polygon(0 0,0 0,0 0,0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+#smallscreen-menu-checkbox:checked~#site-nav {
+    transform: none;
+}
+
+.smallscreen-menu-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
