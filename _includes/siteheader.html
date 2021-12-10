@@ -1,7 +1,11 @@
 <header id="site-header">
     <div class="wrapper">
-        <a class="logo">
-            <img src="" alt="Individual Tax Service Logo" />
+        <a class="logo" href="/">
+            {% if page.class != 'home' %}
+            <img src="/img/its-logo.svg" alt="Individual Tax Service Logo" />
+            {% else %}
+            <img src="/img/its-logo-white.svg" alt="Individual Tax Service Logo" />
+            {% endif %}
         </a>
         <input type="checkbox" id="smallscreen-menu-checkbox" name="smallscreen-menu-checkbox">
         <label for="smallscreen-menu-checkbox" class="smallscreen-menu-toggle">Menu</label>
