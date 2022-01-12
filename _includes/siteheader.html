@@ -1,14 +1,23 @@
 <header id="site-header">
     <div class="wrapper">
-        <a class="logo" href="/">
-            {% if page.class != 'home' %}
-            <img src="/img/its-logo.svg" alt="Individual Tax Service Logo" />
-            {% else %}
-            <img src="/img/its-logo-white.svg" alt="Individual Tax Service Logo" />
-            {% endif %}
-        </a>
+        <div>
+            <a class="logo" href="/">
+                {% if page.class != 'home' %}
+                <img src="/img/its-logo.svg" alt="Individual Tax Service Logo" />
+                {% else %}
+                <img src="/img/its-logo-white.svg" alt="Individual Tax Service Logo" />
+                {% endif %}
+            </a>
+            <label for="smallscreen-menu-checkbox" class="smallscreen-menu-toggle">
+                <span>Menu</span>
+                <div class="smallscreen-menu-icon">
+                    <div class="smallscreen-menu-bar">&nbsp;</div>
+                    <div class="smallscreen-menu-bar">&nbsp;</div>
+                    <div class="smallscreen-menu-bar">&nbsp;</div>
+                </div>
+            </label>
+        </div>
         <input type="checkbox" id="smallscreen-menu-checkbox" name="smallscreen-menu-checkbox">
-        <label for="smallscreen-menu-checkbox" class="smallscreen-menu-toggle">Menu</label>
         <nav id="site-nav">
             <ul>
                 <li><a href="/">Home</a></li>

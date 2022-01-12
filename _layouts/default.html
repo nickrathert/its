@@ -30,30 +30,32 @@
 </head>
 
 <body class="{{ page.class | downcase }}">
+    <div class="whole-page-wrapper">
 
-    <div class="hero">
-        {% include siteheader.html %} 
+        <div class="hero">
+            {% include siteheader.html %} 
 
-        {% if page.title == "Home" %}
-        <div class="home-cta">
-            <h1>Get Your Refund!</h1>
-            {% include btn-appointment.html %}
+            {% if page.title == "Home" %}
+            <div class="home-cta">
+                <h1>Get Your Refund!</h1>
+                {% include btn-appointment.html %}
+            </div>
+            {% else %}
+            <h1>{{ page.title }}</h1>
+            {% endif %}
         </div>
-        {% else %}
-        <h1>{{ page.title }}</h1>
-        {% endif %}
+        
+        <main>
+            {{ content }}
+        </main>
+
+        {% include sitefooter.html %}
+
+        <script src="/js/app.js"></script>
+
+        {% include analytics.html %}
+
     </div>
-    
-    <main>
-        {{ content }}
-    </main>
-
-    {% include sitefooter.html %}
-
-    <script src="/js/app.js"></script>
-
-    {% include analytics.html %}
-
 </body>
 
 </html>
