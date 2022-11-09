@@ -1,19 +1,21 @@
 <header id="site-header">
     <div class="wrapper">
         <div>
-            <a class="logo" href="/">
-                {% if page.class != 'home' %}
-                <img src="/img/its-logo.svg" alt="Individual Tax Service Logo" />
-                {% else %}
-                <img src="/img/its-logo-white.svg" alt="Individual Tax Service Logo" />
-                {% endif %}
+            {% if page.class != 'home' %}
+            <a class="logo" href="../">
+                <img src="../img/its-logo.svg" alt="Individual Tax Service Logo" />
             </a>
+            {% else %}
+            <a class="logo" href="">
+                <img src="img/its-logo-white.svg" alt="Individual Tax Service Logo" />
+            </a>
+            {% endif %}
             <label for="smallscreen-menu-checkbox" class="smallscreen-menu-toggle">
                 <span>Menu</span>
-                <div class="smallscreen-menu-icon">
-                    <div class="smallscreen-menu-bar">&nbsp;</div>
-                    <div class="smallscreen-menu-bar">&nbsp;</div>
-                    <div class="smallscreen-menu-bar">&nbsp;</div>
+                <div class="smallscreen-menu-icon" id="smallscreen-menu-icon">
+                    <div class="smallscreen-menu-bar bar-top">&nbsp;</div>
+                    <div class="smallscreen-menu-bar bar-middle">&nbsp;</div>
+                    <div class="smallscreen-menu-bar bar-bottom">&nbsp;</div>
                 </div>
             </label>
         </div>
@@ -21,14 +23,22 @@
         <nav id="site-nav">
             <div class="wrapper">
                 <ul class="general-nav">
+                    {% if page.class != 'home' %}
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../prices/">Prices</a></li>
+                    <li><a href="../appointments/">Appointments</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                    {% else %}
                     <li><a href="/">Home</a></li>
-                    <li><a href="/prices/">Prices</a></li>
-                    <li><a href="/appointments/">Appointments</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="prices/">Prices</a></li>
+                    <li><a href="appointments/">Appointments</a></li>
+                    <li><a href="about/">About</a></li>
+                    <li><a href="contact/">Contact</a></li>
+                    {% endif %}
                 </ul>
                 <ul class="cta-nav">
-                    <li><a href="https://" class="button secondary-cta">Check My Return</a></li>
+                    <li><a href="//sa.www4.irs.gov/irfof/lang/en/irfofgetstatus.jsp" class="button secondary-cta">Check My Return</a></li>
                     <li>{% include btn-appointment.html %}</li>
                 </ul>
             </div>

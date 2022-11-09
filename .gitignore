@@ -6,3 +6,8 @@ vendor
 .DS_Store
 node_modules
 package-lock.json
+Gemfile
+package.json
+.git
+.vscode
+Gemfile.lock

@@ -1,31 +1,24 @@
-console.log("Hello there.");
+$( document ).ready(function() {
+    console.log("Hello there.");
+    $('html').removeClass('no-js');
+    document.getElementById('smallscreen-menu-checkbox').checked = false;
 
-// if appointments page
-const iframe = document.getElementsByTagName("iframe");
-// ,
-//       iWindow = iframe.contentWindow,
-//       iDocument = iWindow.document;
+    // handle hamburger menu icon transformation
+    const hbIcon = document.getElementById('smallscreen-menu-icon'),
+        checkbox = document.getElementById('smallscreen-menu-checkbox');
+    // add class when the checkbox is checked
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            // add class for open menu
+            $('#smallscreen-menu-icon').addClass('menu-open');
+            // adjust height of nav menu
+            $('#site-nav').height( $('body').height() );
+        } else {
+            // remove class for open menu
+            $('#smallscreen-menu-icon').removeClass('menu-open');
+            $('#site-nav').height( 'auto' );
+        }
+        //checkbox.checked = false;
+    });
 
-console.log(iframe);
-
-function iframeRef( frameRef ) {
-    return frameRef.contentWindow
-        ? frameRef.contentWindow.document
-        : frameRef.contentDocument
-}
-
-// var inside = iframeRef( iframe[0] );
-// console.log(inside);
-
-// var iheader = inside.getElementsByClassName(".widget-header");
-// iheader.style.display = "none";
-
-iframe[0].addEventListener("load", function() {
-    console.log("iframe loaded");
-
-    // var inside = iframeRef( this );
-    // console.log(inside);
-
-    var iheader = this.contentWindow.document.getElementsByClassName(".widget-header");
-    iheader[0].style.display = "none";
-  });
+});

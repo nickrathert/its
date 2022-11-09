@@ -18,6 +18,7 @@ team_members:
 ---
 
 <div class="wrapper">
+    <div class="coming-soon"><h2>Coming<br>Soon</h2></div>
     <h2>Our Business is based on Family Values, Communication and Dedication</h2>
 
     <p><em>Individual Taxservice</em> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi quis cursus mauris non neque facilisis mollis. Neque, gravida sit sodales praesent in. Turpis dolor est viverra nunc eget fames. Penatibus sed ullamcorper quam consequat leo scelerisque. Curabitur id tellus mollis odio enim lorem pulvinar cursus. Eu, ultrices varius ac id amet aliquet.</p>

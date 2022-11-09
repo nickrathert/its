@@ -10,13 +10,13 @@ permalink: /contact/
 </section>
 
 <div class="wrapper">
-    <div>
+    <div class="contact-address">
         {{ site.itsStreet }}<br>
         {{ site.itsCity }}, {{ site.itsState }} {{ site.itsZip }}
     </div>
-    <div>
-        Phone: {{ site.itsPhone }}<br>
-        Email: <a href="{{ site.itsEmail }}">Hank Gory</a>
+    <div class="contact-phone">
+        <em>Phone:</em> <a href="tel:{{ site.itsPhoneUnformatted }}">{{ site.itsPhone }}</a><br>
+        <em>Email:</em> <a href="{{ site.itsEmail }}">Hank Gory</a>
     </div>
 
     {% include hours.html %}

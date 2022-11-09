@@ -1,13 +1,13 @@
 <footer class="site-footer">
     <div class="wrapper">
         <p>&copy; <span id="currentYear">2021</span> Individual Taxservice</p>
-        <p>Phone: {{ site.itsPhone }}<br>
+        <p>Phone: <a href="tel:{{ site.itsPhoneUnformatted }}">{{ site.itsPhone }}</a><br>
             Email: <a href="{{ site.itsEmail | escape_once }}">Hank Gory</a>
         </p>
         <p>{{ site.itsStreet }}<br>
         {{ site.itsCity }}, {{ site.itsState }} {{ site.itsZip }}</p>
         {% if page.class != "home" %}
-        <img class="cc-logos" src="/img/cc-logos.png" alt="Credit Card logos for Square, Visa, MasterCard, Amex, and Discover" />
+        <img class="cc-logos" src="../img/cc-logos.png" alt="Credit Card logos for Square, Visa, MasterCard, Amex, and Discover" />
         {% endif %}
     </div>
 </footer>
