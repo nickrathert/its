@@ -483,4 +483,8 @@ table {
     .reviews {
         flex-direction: row;
     }
+
+    .reviews > li {
+        margin-top: 0;
+    }
 }
