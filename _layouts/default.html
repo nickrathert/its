@@ -20,7 +20,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">-->
     <!-- Place favicon.ico in the root directory -->
-    <link rel="preconnect" href="//fonts.gstatic.com"> 
+    <link rel="preconnect" href="//fonts.gstatic.com">
     <link href="//fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     {% if page.title == "Home" %}
     <link rel="stylesheet" href="css/style.css">
@@ -37,7 +37,7 @@
     <div class="whole-page-wrapper">
 
         <div class="hero">
-            {% include siteheader.html %} 
+            {% include siteheader.html %}
 
             {% if page.title == "Home" %}
             <div class="home-cta">
@@ -48,7 +48,7 @@
             <h1>{{ page.title }}</h1>
             {% endif %}
         </div>
-        
+
         <main>
             {{ content }}
         </main>
@@ -63,6 +63,7 @@
         {% endif %}
 
         {% include analytics.html %}
+        <script src="https://kit.fontawesome.com/08239e78b0.js" crossorigin="anonymous"></script>
 
     </div>
 </body>
